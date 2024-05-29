@@ -23,25 +23,25 @@ function App() {
   }, [getData]);
   return (
     <div className="App">
-      <div class="container">
-        <div class="row mt-3">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div className="container">
+        <div className="row mt-3">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <DateTime></DateTime>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="row mt-3">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <Category></Category>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="row mt-3">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <PopularDishes></PopularDishes>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div className="row">
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             {apiData &&
               apiData.map((dishes) => (
                 <div

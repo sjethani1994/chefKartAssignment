@@ -2,10 +2,10 @@ import React from "react";
 
 function DateTime() {
   return (
-    <div class="container">
+    <div className="container">
       <div className="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="form-group">
+        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div className="form-group">
             <input
               type="date"
               name="date"
@@ -14,8 +14,8 @@ function DateTime() {
             />
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="form-group">
+        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div className="form-group">
             <input
               type="time"
               name="date"
