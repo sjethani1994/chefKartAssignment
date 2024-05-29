@@ -1,0 +1,70 @@
+/* CSS file for DishItems component */
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.left-div {
+  flex: 1;
+  padding-left: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.card-title {
+  margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.equipments {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+}
+
+.equipment-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.equipment-icon {
+  margin: 10px;
+}
+
+.equipment-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.ingredients {
+  margin-top: 10px;
+}
+
+.view-list {
+  color: #ff8800;
+  letter-spacing: 0.1px;
+  font-size: 15px;
+}
+
+.description {
+  float: inline-start;
+  margin-top: 10px;
+}
+
+.dish-image {
+  width: 100%;
+}

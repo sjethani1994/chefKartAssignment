@@ -46,7 +46,7 @@ function App() {
               apiData.map((dishes) => (
                 <div
                   key={dishes.id}
-                  class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3"
+                  className="col-xs-12 col-sm-12 col-md-6 col-lg-10 col-xl-10 mt-3"
                 >
                   <DishItems dishes={dishes} />
                 </div>

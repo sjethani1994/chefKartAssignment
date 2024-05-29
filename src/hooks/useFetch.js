@@ -35,10 +35,44 @@ const useFetch = () => {
     }
   };
 
+  const getDishById = async (dishId) => {
+    try {
+      const response = await axios.get(
+        `https://8b648f3c-b624-4ceb-9e7b-8028b7df0ad0.mock.pstmn.io/dishes/v1/${dishId}`
+      );
+
+      if (response.status === 200) {
+        return { success: true, data: response.data, fetchError: null };
+      } else {
+        return {
+          success: false,
+          data: null,
+          error: `Dish with ID ${dishId} not found`,
+        };
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        return {
+          success: false,
+          data: null,
+          fetchError: "Unauthorized access",
+        };
+      } else {
+        return {
+          success: false,
+          data: null,
+          error: error.response
+            ? error.response.data.message
+            : "An error occurred. Please try again later.",
+        };
+      }
+    }
+  };
   return {
     getData,
     getError,
     getAllDishes,
+    getDishById,
   };
 };
 

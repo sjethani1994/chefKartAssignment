@@ -1,12 +1,11 @@
-import React from 'react'
-import image from '../assest/Mask Group 19@2x.png'
+import React from "react";
+import image from "../assets/Mask Group 19@2x.png";
 function PopularDishes() {
   return (
     <div class="container">
-        <img src={image} alt='img' style={{borderRadius: "50%"}} />
+      <img src={image} alt="img" style={{ borderRadius: "50%" }} />
     </div>
-    
-  )
+  );
 }
 
-export default PopularDishes
+export default PopularDishes;
